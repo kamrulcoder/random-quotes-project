@@ -35,58 +35,51 @@
 
 ```
 
-        let btn =document.getElementById("generator");
+      let btn = document.getElementById("generator");
         let text = document.getElementById("qoute")
         let author = document.getElementById("author")
-        
-        let qouteContent = [
-            {
-                quote:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum dolore, modi architecto quibusdam, sunt obcaecati nobis iure perferendis officia, culpa dolor! Reiciendis dolore fuga quia obcaecati nihil nobis autem.",
-                author:"kamrul hasan "
+
+        let qouteContent = [{
+                quote: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum dolore, modi architecto quibusdam, sunt obcaecati nobis iure perferendis officia, culpa dolor! Reiciendis dolore fuga quia obcaecati nihil nobis autem.",
+                author: "kamrul hasan "
             },
             {
-                quote:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum dolore, modi architecto quibusdam, sunt obcaecati nobis iure perferendis officia, culpa dolor! Reiciendis dolore fuga quia obcaecati nihil nobis autem.",
-                author:"kamrul hasan "
+                quote: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum dolore, modi architecto quibusdam, sunt obcaecati nobis iure perferendis officia, culpa dolor! Reiciendis dolore fuga quia obcaecati nihil nobis autem.",
+                author: "kamrul hasan "
             },
             {
-      quote:
-        "Life is too short and sweet to be spent by cribbing and complaining about things. Here are some random quotes about the most wonderful gift that we've got",
-      author: " Life"
-    },
-    {
-      quote:
-        "Humor is richly rewarding to the person who employs it. It has some value in gaining and holding attention. But it has no persuasive value at all",
-      author: "John Kenneth Galbraith"
-    },
-    {
-      quote:
-        "God save me from my friends. I can protect myself from my enemies.",
-      author: "Claude Louis Hector de Villars "
-    },
-    {
-      quote: "The price of anything is the amount of life you exchange for it.",
-      author: "David Thoreau"
-    },
-    {
-      quote:
-        "Life is like a landscape. You live in the midst of it but can describe it only from the vantage point of distance. ",
-      author: "Charles Lindbergh"
-    },
-    {
-      quote:
-        "A critic is someone who never actually goes to the battle, yet who afterwards comes out shooting the wounded.",
-      author: " Tyne Daly"
-    }
+                quote: "Life is too short and sweet to be spent by cribbing and complaining about things. Here are some random quotes about the most wonderful gift that we've got",
+                author: " Life"
+            },
+            {
+                quote: "Humor is richly rewarding to the person who employs it. It has some value in gaining and holding attention. But it has no persuasive value at all",
+                author: "John Kenneth Galbraith"
+            },
+            {
+                quote: "God save me from my friends. I can protect myself from my enemies.",
+                author: "Claude Louis Hector de Villars "
+            },
+            {
+                quote: "The price of anything is the amount of life you exchange for it.",
+                author: "David Thoreau"
+            },
+            {
+                quote: "Life is like a landscape. You live in the midst of it but can describe it only from the vantage point of distance. ",
+                author: "Charles Lindbergh"
+            },
+            {
+                quote: "A critic is someone who never actually goes to the battle, yet who afterwards comes out shooting the wounded.",
+                author: " Tyne Daly"
+            }
         ];
 
         btn.addEventListener("click", generate)
 
 
-        function generate(){
-            let qouteIndex = Math.floor(Math.random() *qouteContent.length );
+        function generate() {
+            let qouteIndex = Math.floor(Math.random() * qouteContent.length);
 
             text.textContent = qouteContent[qouteIndex].quote;
             author.textContent = qouteContent[qouteIndex].author;
         }
-
 ```
