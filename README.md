@@ -1,4 +1,4 @@
-# Random Qoute Generate Vinilla project 
+# [Random Qoute Generate Vinilla project ](https://kamrulcoder.github.io/random-quotes-project/)
 
 ## This project is very simple and straightforward. But  I can learn something through this project. 
 ### That's what I am learning New  Javascript syntax here .............
